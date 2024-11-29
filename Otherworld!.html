@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mokong.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+</head>
+<title>Hello sir</title>
+<h1>Welcome to the Otherworld!!</h1>
+<h3>Please enjoy your stay, my dear guest!</h3>
+
+<body>
+    <br>
+    <br>
+
+    <div>
+
+        <center><img id="slider" src="I see you.jpg" width="300px" height="500px" /></center>
+        <center><button onclick="prev()"> Prev </button>
+            <button onclick="next()"> Next </button></center>
+
+        <p>Click me!</p>
+        <center><button id="hi">Click me please...</button></center>
+
+
+    </div>
+    <script src="haha.js" defer></script>
+    <script>
+        var images = [
+            'I see you.jpg',
+            'funky.jpg',
+            'ugu.jpg',
+            'moon man.jpg',
+            'what.jpg',
+            'sorry na nga.jpg'
+        ];
+        var num = 0;
+
+        function next() {
+            var slider = document.getElementById("slider");
+            num++;
+            if (num >= images.length) {
+                num = 0;
+            }
+            slider.src = images[num];
+        }
+
+        function prev() {
+            var slider = document.getElementById("slider");
+            num--;
+            if (num < 0) {
+                num = images.length - 1;
+            }
+            slider.src = images[num];
+        }
+    </script>
+
+    <br>
+    <br>
+    <center><audio controls autoplay loop src="Nimbasa Core.mp3"></audio></center>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+
+            
+        })
+    </script>
+   
+
+</body>
+
+</html>
